@@ -1,0 +1,111 @@
+/* 1. Thiết lập chung */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* 2. Header cố định kiểu dáng */
+.main-header {
+    height: 100px;
+    background-color: #007bb5;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+.main-header h1 {
+    margin: 0;
+}
+
+/* 3. Navigation Bar (Thanh điều hướng) */
+.main-nav {
+    background-color: #333333;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li a {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.main-nav ul li a:hover {
+    background-color: #ff4757;
+}
+
+/* 4. Layout 3 Cột Flexbox (Hiện đại & Gọn gàng hơn Float) */
+.content-container {
+    display: flex;
+    min-height: 400px;
+}
+
+.sidebar-left {
+    width: 200px;
+    background-color: #e0e0e0;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+.sidebar-left ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sidebar-left ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar-left ul li a {
+    color: #007bb5;
+    text-decoration: none;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.main-content article {
+    margin-bottom: 20px;
+}
+
+.main-content h2 {
+    color: #2f3542;
+    margin-bottom: 8px;
+}
+
+.sidebar-right {
+    width: 210px;
+    background-color: #e0e0e0;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+/* 5. Footer */
+.main-footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
